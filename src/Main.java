@@ -9,8 +9,12 @@ public class Main {
                 + sumEvenFor);
 
         int sumEvenWhile=0;
-        while (0<=100){
-
+        int i=0;
+        while (i<=100){
+            sumEvenWhile+=i;
+            i+=2;
         }
+        System.out.println("Sum for Even numbers using while loop = "
+                + sumEvenWhile);
     }
 }
