@@ -30,34 +30,61 @@ public class Main {
         System.out.println("=========================================");
 
 
-        //Write code to get the sum of odd numbers from 0 to 100
-        int oddEvenFor=0;
+        //Write code to get the sum of numbers that is dividable by 7 from 0 to 100
+        int sumOddFor=0;
         for (int i = 1; i <= 100; i+=2) {
-            oddEvenFor+=i;
+            sumOddFor+=i;
         }
         System.out.println("Sum for Odd numbers using for loop = "
-                + oddEvenFor);
+                + sumOddFor);
 
-        int oddEvenWhile=0;
+        int sumOddWhile=0;
         int m=1;
         while (m<=100){
-            oddEvenWhile+=m;
+            sumOddWhile+=m;
             m+=2;
         }
         System.out.println("Sum for Odd numbers using while loop = "
-                + oddEvenWhile);
+                + sumOddWhile);
 
 
-        int oddEvenDoWhile=0;
+        int sumOddDoWhile=0;
         int n=1;
         do{
-            oddEvenDoWhile+=n;
+            sumOddDoWhile+=n;
             n+=2;
         }while (n<=100);
         System.out.println("Sum for Odd numbers using do-while loop = "
-                + oddEvenDoWhile);
+                + sumOddDoWhile);
 
         System.out.println("=========================================");
+
+        //Write code to get the sum of even numbers from 0 to 100
+        int sumBy7For=0;
+        for (int i = 0; i <= 100; i+=7) {
+            sumBy7For+=i;
+        }
+        System.out.println("Sum for numbers that is dividable by 7 using for loop = "
+                + sumBy7For);
+
+        int sumBy7While=0;
+        int q=0;
+        while (q<=100){
+            sumBy7While+=q;
+            q+=7;
+        }
+        System.out.println("Sum for numbers that is dividable by 7 using while loop = "
+                + sumBy7While);
+
+
+        int sumBy7DoWhile=0;
+        int s=0;
+        do{
+            sumBy7DoWhile+=s;
+            s+=7;
+        }while (s<=100);
+        System.out.println("Sum for numbers that is dividable by 7 using do-while loop = "
+                + sumBy7DoWhile);
 
     }
 }
